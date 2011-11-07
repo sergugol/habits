@@ -11,13 +11,13 @@ gem 'omniauth'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.2"
-  gem 'coffee-rails', "~> 3.1.1"
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'uglifier'
 end
 
 gem 'jquery-rails'
-gem 'therubyracer', '>= 0.9.8'
+gem 'therubyracer'
 
 # Use unicorn as the web server
 # gem 'unicorn'
