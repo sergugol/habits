@@ -2,11 +2,16 @@
 <html>
 <head>
   <title>Habits</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+
+<div id="user_nav">
+  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+</div>
 
 <%= yield %>
 
