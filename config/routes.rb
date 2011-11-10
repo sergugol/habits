@@ -51,7 +51,7 @@ Habits::Application.routes.draw do
   root :to => "application#index"
 
   # OmniAuth
-  match "/auth/:provider/callback" => "application#index"
+  match "/auth/:provider/callback" => "sessions#create"
 
   # See how all your routes lay out with "rake routes"
 
