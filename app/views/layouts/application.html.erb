@@ -8,14 +8,16 @@
 </head>
 <body>
 
-application layout
-
 <% if current_user %>
 	Welcome, <%= current_user.name %>!
 	<%= link_to "Sign Out", signout_path %>
 <% end %>
 
+<div id="header"></div>
+
 <%= yield %>
+
+<div id="footer"></div>
 
 </body>
 </html>
