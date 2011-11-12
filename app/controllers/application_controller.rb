@@ -3,6 +3,11 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
 
+  def index
+    @title = "Change(d)"
+    render "splash", :layout => "splash" if !current_user
+  end
+
   private
 
   def current_user
