@@ -11,10 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111110224256) do
+ActiveRecord::Schema.define(:version => 20111112203056) do
 
   create_table "habits", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "type"
+    t.datetime "start_date"
+    t.datetime "last_done"
+    t.boolean  "active"
+    t.integer  "attempts"
+  end
+
+  create_table "missed_days", :force => true do |t|
+    t.datetime "date_missed"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
