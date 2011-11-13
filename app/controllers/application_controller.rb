@@ -5,7 +5,11 @@ class ApplicationController < ActionController::Base
 
   def index
     @title = "Change(d)"
-    render "splash", :layout => "splash" if !current_user
+    if !current_user
+      render "splash", :layout => "splash"
+    else
+      render "habits/index"
+    end
   end
 
   private
