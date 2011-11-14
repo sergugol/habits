@@ -2,7 +2,9 @@ class HabitsController < ApplicationController
   # GET /habits
   # GET /habits.json
   def index
-    @habits = Habit.all
+    @habits = current_user.habits
+
+    p @habits.inspect
 
     respond_to do |format|
       format.html # index.html.erb
