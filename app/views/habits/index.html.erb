@@ -1,8 +1,21 @@
-These are your goals:
-<%# @habits.each do |habit| %>
-	<%# @habit.inspect %>
-<%# end %>
+<h1>Listing habits</h1>
 
-<%= @current_user.inspect %>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<%= link_to "Create new habit", "#" %>
+<% @habits.each do |habit| %>
+  <tr>
+    <td><%= link_to 'Show', habit %></td>
+    <td><%= link_to 'Edit', edit_habit_path(habit) %></td>
+    <td><%= link_to 'Destroy', habit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Habit', new_habit_path %>
