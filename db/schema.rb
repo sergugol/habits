@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(:version => 20111114223842) do
 
   create_table "habits", :force => true do |t|
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "type"
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20111114223842) do
 
   create_table "missed_days", :force => true do |t|
     t.datetime "date_missed"
+    t.integer  "habit_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

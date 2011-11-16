@@ -4,8 +4,6 @@ class HabitsController < ApplicationController
   def index
     @habits = current_user.habits
 
-    p @habits.inspect
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @habits }

@@ -5,10 +5,10 @@ class ApplicationController < ActionController::Base
 
   def index
     @title = "Change(d)"
-    if !current_user
+    unless current_user
       render "splash", :layout => "splash"
     else
-      render "habits/index"
+      redirect_to habits_path
     end
   end
 
