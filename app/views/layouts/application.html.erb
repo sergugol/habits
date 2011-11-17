@@ -8,16 +8,19 @@
 </head>
 <body>
 
-<% if current_user %>
-	Welcome, <%= current_user.name %>!
-	<%= link_to "Sign Out", signout_path %>
-<% end %>
+<div id="main">
+	<div id="site">
+		<% if current_user %>
+			Welcome, <%= current_user.name %>!
+			<%= link_to "Sign Out", signout_path %>
+		<% end %>
 
-<div id="header"></div>
+		<%= yield %>
+	</div>
+</div>
 
-<%= yield %>
-
-<div id="footer"></div>
+<div id="footer">
+</div>
 
 </body>
 </html>
