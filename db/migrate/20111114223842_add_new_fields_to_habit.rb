@@ -1,5 +1,6 @@
 class AddNewFieldsToHabit < ActiveRecord::Migration
   def change
+    add_column :habits, :name, :string
     add_column :habits, :type, :string
     add_column :habits, :start_date, :datetime
     add_column :habits, :last_done, :datetime

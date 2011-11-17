@@ -25,6 +25,7 @@ class HabitsController < ApplicationController
   # GET /habits/new.json
   def new
     @habit = Habit.new
+    current_user.habits << @habit
 
     respond_to do |format|
       format.html # new.html.erb
