@@ -14,20 +14,87 @@ html {
 body {
 	background: url(xv.png) repeat #FFFFFF;
 	margin: 0;
+	height: 100%;
+}
+
+#main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#header {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  background: #EEEEEE;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+#splash-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -390px;
+  margin-top: -200px;
+  background: #EEEEEE;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  width: 640px;
+  height: 260px;
+  padding: 50px;
+  
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 #site {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-
 	background: #EEEEEE;
-	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-	padding: 20px;
+	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+	padding: 70px 20px 20px 20px;
 	width: 880px;
 	margin: 0 auto;
 }
 
 a img {
 	border: none;
+}
+
+h1 {
+  font-size: 40pt;
+  color: #AAAAFF;
+  text-shadow: 0 .5px 0 #666666;
+  font-family: 'Bitter', serif;
+}
+
+h2 {
+  color: #999999;
+  font-size: 20pt;
+  line-height: 20pt;
+}
+
+h2 .smaller {
+  font-size: 50%;
+  color: #AAAAAA;
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+#with-facebook {
+  float: left;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+#with-twitter {
+  float: right;
+  margin-right: 70px;
+  margin-top: 20px;
 }

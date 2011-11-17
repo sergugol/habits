@@ -4,16 +4,15 @@
   <title><%= @title %></title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Petrona|Bitter' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
 <div id="main">
-	<div id="site">
+	<div id="splash-box">
 		<%= yield %>
 	</div>
-</div>
-<div id="footer">
 </div>
 
 </body>

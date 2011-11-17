@@ -4,17 +4,19 @@
   <title><%= @title %></title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Petrona|Bitter' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
 <div id="main">
+  <div id="header">
+    <% if current_user %>
+      Welcome, <%= current_user.name %>!
+      <%= link_to "Sign Out", signout_path %>
+    <% end %>
+  </div>
 	<div id="site">
-		<% if current_user %>
-			Welcome, <%= current_user.name %>!
-			<%= link_to "Sign Out", signout_path %>
-		<% end %>
-
 		<%= yield %>
 	</div>
 </div>
