@@ -12,12 +12,14 @@
 <div id="main">
   <div id="header">
     <% if current_user %>
-      Welcome, <%= current_user.name %>!
-      <%= link_to "Sign Out", signout_path %>
+      <span id="welcome">Welcome, <%= current_user.name %>!</span>
+      <%= link_to "Sign Out", signout_path, :id => "sign-out" %>
     <% end %>
   </div>
 	<div id="site">
-		<%= yield %>
+		<div id="container">
+			<%= yield %>
+		</div>
 	</div>
 </div>
 

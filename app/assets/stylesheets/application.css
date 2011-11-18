@@ -26,13 +26,14 @@ body {
 }
 
 #header {
-  width: 100%;
   height: 20px;
   position: absolute;
   top: 0px;
+  left: 0px;
+  width: 100%;
   background: #EEEEEE;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 #splash-box {
@@ -69,18 +70,29 @@ body {
 }
 
 #site {
+	position: absolute;
 	background: #EEEEEE;
 	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
-	padding: 70px 20px 20px 20px;
+	padding: 0px;
 	width: 880px;
-	margin: 0 auto;
+
+	left: 50%;
+	top: 50%;
+	margin-left: -440px;
+	margin-top: -340px;
+
+	border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
+	height: 680px;
 }
 
 a img {
 	border: none;
 }
 
-h1 {
+#splash-box h1 {
   font-size: 40pt;
   color: #AAAAFF;
   text-shadow: 0 .5px 0 #666666;
@@ -88,14 +100,14 @@ h1 {
 }
 
 h2 {
-  color: #999999;
+  color: #666666;
   font-size: 20pt;
   line-height: 20pt;
 }
 
 h2 .smaller {
   font-size: 50%;
-  color: #AAAAAA;
+  color: #999999;
   text-align: right;
 	line-height: 10pt;
 	margin-right: 10px;
@@ -115,4 +127,22 @@ h2 .smaller {
   float: right;
   margin-right: 70px;
   margin-top: 20px;
+}
+
+a#sign-out {
+	float: right;
+	margin-right: 15px;
+}
+
+span#welcome {
+	margin-left: 15px;
+}
+
+#site #container {
+	background: #F6F6F6;
+	border-top: dotted 1px #000000;
+	border-bottom: dotted 1px #000000;
+	width: 100%;
+	height: 400px;
+	margin-top: 140px;
 }
