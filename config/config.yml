@@ -1,6 +1,19 @@
-facebook:
-  key: 136087009828188
-  secret: 45fc438ade6bf5be309fa70cf8637562
-twitter:
-  key: tlmTFrMKW7G51OYYrOOjmQ
-  secret: ikX9aaABm4aOb2DUJFniDt46KAI7olvCMxzIC354
+development:
+
+  facebook:
+    key: 136087009828188
+    secret: 45fc438ade6bf5be309fa70cf8637562
+
+  twitter:
+    key: tlmTFrMKW7G51OYYrOOjmQ
+    secret: ikX9aaABm4aOb2DUJFniDt46KAI7olvCMxzIC354
+
+production:
+
+  twitter:
+    key: 3fmRGxVYXDJqOL1U8lycOw
+    secret: oUIDjviYP9UPdg1bmdCXyX3tAvj8NoioKjToBWTKHwk
+
+  facebook:
+    key: 240234709373584
+    secret: 816eea786a43af813151e33327cbc201
