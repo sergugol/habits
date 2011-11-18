@@ -97,6 +97,8 @@ h2 .smaller {
   font-size: 50%;
   color: #AAAAAA;
   text-align: right;
+	line-height: 10pt;
+	margin-right: 10px;
 }
 
 .center {
