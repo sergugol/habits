@@ -7,12 +7,14 @@
   <link href='http://fonts.googleapis.com/css?family=Petrona|Bitter' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body id="splash">
 
-<div id="main">
-	<div id="splash-box">
-		<%= yield %>
-	</div>
+<div class="container">
+  <div class="row">
+    <div id="splash-box" class="eight columns centered">
+      <%= yield %>
+    </div> 
+  </div>
 </div>
 
 </body>
