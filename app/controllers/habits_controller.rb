@@ -4,6 +4,10 @@ class HabitsController < ApplicationController
   def index
     @habits = current_user.habits
 
+    if @habits.empty?
+      redirect_to new_habit_path and return
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @habits }
@@ -25,7 +29,6 @@ class HabitsController < ApplicationController
   # GET /habits/new.json
   def new
     @habit = Habit.new
-    current_user.habits << @habit
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,10 +45,11 @@ class HabitsController < ApplicationController
   # POST /habits.json
   def create
     @habit = Habit.new(params[:habit])
+    current_user.habits << @habit
 
     respond_to do |format|
       if @habit.save
-        format.html { redirect_to @habit, notice: 'Habit was successfully created.' }
+        format.html { redirect_to habits_path, notice: 'Habit was successfully created.' }
         format.json { render json: @habit, status: :created, location: @habit }
       else
         format.html { render action: "new" }
