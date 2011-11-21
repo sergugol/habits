@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= @title %></title>
+  <title><%= title %></title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <link href='http://fonts.googleapis.com/css?family=Petrona|Bitter' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
       <%= link_to "Sign Out", signout_path, :id => "sign-out" %>
     <% end %>
   </div>
-	<div id="site">
+	<div id="site" class="eight columns centered">
 		<div id="container">
 			<%= yield %>
 		</div>

@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def index
-    @title = "Change(d) - Improve your life. One day at a time."
     unless current_user
       render "splash", :layout => "splash"
     else
