@@ -8,30 +8,6 @@
   <%= csrf_meta_tag %>
 </head>
 <body id="app">
-
-  <div id="header" class='navbar navbar-fixed-top'>
-    <div class="navbar-inner">
-      <div class="container">
-
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-
-        <a href='#' class='brand'>Change(d)</a>
-        <div class="nav-collapse">
-          <ul class='nav'>
-            <li class='active'><a href=''>Home</a></li>
-            <% if current_user %><li><%= link_to "Sign Out", signout_path, :id => "sign-out" %></li><% end %>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <%= yield %>
-
 </body>
 </html>
