@@ -6,13 +6,12 @@ gem 'rails', '3.2.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  gem 'thin'
   gem 'sqlite3'
 end
 
 gem 'omniauth-facebook'
-
 gem 'bootstrap-sass'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
