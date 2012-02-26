@@ -18,8 +18,8 @@ App.Router = Backbone.Router.extend({
   },
 
   displayIndex: function() {
-    var indexView = new App.Views.Index();
-    indexView.render();
-    $('body').html(indexView.el);
+    // var indexView = new App.Views.Index();
+    // indexView.render();
+    // $('body').html(indexView.el);
   }
 });
