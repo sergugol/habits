@@ -6,14 +6,13 @@ gem 'rails', '3.1.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
+  gem 'thin'
   gem 'sqlite3'
 end
 
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
-
-gem 'zurb-foundation'
 
 # Gems used only for assets and not required
 # in production environments by default.
