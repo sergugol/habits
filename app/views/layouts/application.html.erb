@@ -9,11 +9,15 @@
 </head>
 <body id="app">
 
-  <div id="header">
-    <% if current_user %>
-      <span id="welcome">Welcome, <%= current_user.name %>!</span>
-      <%= link_to "Sign Out", signout_path, :id => "sign-out" %>
-    <% end %>
+  <div id="header" class='navbar navbar-fixed-top'>
+    <div class="navbar-inner">
+      <div class="container">
+        <% if current_user %>
+          <span id="welcome">Welcome, <%= current_user.name %>!</span>
+          <%= link_to "Sign Out", signout_path, :id => "sign-out" %>
+        <% end %>
+      </div>
+    </div>
   </div>
 
   <%= yield %>

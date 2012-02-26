@@ -18,17 +18,10 @@ body {
 }
 
 #header {
-    height: 20px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background: #EEEEEE;
-    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 10px 0px;
     a#sign-out {
         float: right;
         margin-right: 15px;
+        height: 40px;
     }
     span#welcome {
         margin-left: 15px;
@@ -43,7 +36,7 @@ body#app {
                 height: 80%;
                 background: #EEEEEE;
                 box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
-              
+
                 border-radius: 10px;
                 -moz-border-radius: 10px;
                 -webkit-border-radius: 10px;
@@ -63,48 +56,41 @@ body#app {
 
 body#splash {
     .container {
-        .row {
-            #splash-box {
-                /* http://gradients.glrzad.com */
-              
-                background-image: linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
-                background-image: -o-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
-                background-image: -moz-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
-                background-image: -webkit-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
-                background-image: -ms-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
-              
-                background-image: -webkit-gradient(
-                  linear,
-                  left bottom,
-                  left top,
-                  color-stop(0.23, rgb(221,221,221)),
-                  color-stop(0.81, rgb(238,238,238))
-                );
-              
-                box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
-                margin-top: 20%;
-                height: 240px;
-                padding: 50px;
-                
-                border-radius: 10px;
-                -moz-border-radius: 10px;
-                -webkit-border-radius: 10px;
-                h1 {
-                    font-size: 40pt;
-                    color: #AAAAFF;
-                    text-shadow: 0 .5px 0 #666666;
-                    font-family: 'Bitter', serif;
-                }
-                #with-facebook {
-                    float: left;
-                    margin-left: 70px;
-                    margin-top: 20px;
-                }
-                #with-twitter {
-                    float: right;
-                    margin-right: 70px;
-                    margin-top: 20px;
-                }
+        #splash-box {
+            /* http://gradients.glrzad.com */
+
+            background-image: linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
+            background-image: -o-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
+            background-image: -moz-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
+            background-image: -webkit-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
+            background-image: -ms-linear-gradient(bottom, rgb(221,221,221) 23%, rgb(238,238,238) 81%);
+
+            background-image: -webkit-gradient(
+              linear,
+              left bottom,
+              left top,
+              color-stop(0.23, rgb(221,221,221)),
+              color-stop(0.81, rgb(238,238,238))
+            );
+
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 25% auto;
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            h1 {
+                font-size: 40pt;
+                color: #AAAAFF;
+                text-shadow: 0 .5px 0 #666666;
+                font-family: 'Bitter', serif;
+            }
+            #sign-in-btn {
+                margin-top: 25px;
             }
         }
     }
