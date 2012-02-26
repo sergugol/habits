@@ -4,11 +4,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def index
-    unless current_user
-      render "splash", :layout => "splash"
-    else
-      redirect_to habits_path
-    end
+    render "splash", :layout => "splash" unless current_user
   end
 
   private

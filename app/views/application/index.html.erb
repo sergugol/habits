@@ -1,1 +1,7 @@
-Habits app goes here
+<%= javascript_tag do %>
+  $(document).ready(function() {
+    App.router = new App.Router();
+    App.data.currentUser = <%= current_user.to_json.html_safe %>
+    Backbone.history.start();
+  });
+<% end %>
