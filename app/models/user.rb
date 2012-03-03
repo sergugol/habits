@@ -1,6 +1,12 @@
-class User < ActiveRecord::Base
+class User
+  include Mongoid::Document
 
   has_many :habits
+  has_many :recipes
+
+  field :provider
+  field :uid
+  field :name
 
   def self.create_with_omniauth(auth)
     create! do |user|

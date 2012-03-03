@@ -21,6 +21,9 @@ body#splash {
 }
 
 #header {
+    .brand {
+      font-weight: bold;
+    }
     a#sign-out {
         float: right;
     }

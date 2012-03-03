@@ -1,4 +1,5 @@
-class MissedDay < ActiveRecord::Base
-  
+class MissedDay
+  include Mongoid::Document
+
   belongs_to :habit
 end

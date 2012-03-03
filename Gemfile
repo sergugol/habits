@@ -5,9 +5,8 @@ gem 'rails', '3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
-  gem 'sqlite3'
-end
+gem 'mongoid', '~> 2.4'
+gem 'bson_ext', '~> 1.5'
 
 gem 'omniauth-facebook'
 gem 'bootstrap-sass'
@@ -19,10 +18,6 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-end
-
-group :production do
-  gem 'pg'
 end
 
 gem 'jquery-rails'

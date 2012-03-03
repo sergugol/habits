@@ -8,6 +8,9 @@ class App.Views.Index extends Backbone.View
 
   initialize: ->
 
+  display: (view) =>
+    $('#main-container', @el).html(view.el)
+
   render: =>
-    $(@el).html(@template({}))
+    $(@el).html(@template())
     @

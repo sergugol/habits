@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111114223842) do
+ActiveRecord::Schema.define(:version => 20120303113811) do
 
   create_table "habits", :force => true do |t|
     t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "name"
     t.string   "type"
     t.datetime "start_date"
@@ -28,13 +28,20 @@ ActiveRecord::Schema.define(:version => 20111114223842) do
   create_table "missed_days", :force => true do |t|
     t.datetime "date_missed"
     t.integer  "habit_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "recipes", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "uid"
     t.string   "provider"
     t.string   "name"
