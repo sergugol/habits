@@ -16,10 +16,6 @@ body {
     height: 100%;
 }
 
-body#splash {
-  background: url(xv.png) repeat #FFFFFF;
-}
-
 #header {
     .brand {
       font-weight: bold;
@@ -57,9 +53,19 @@ body#app {
             }
         }
     }
+    textarea#new-recipe {
+      border: none;
+      width: 100%;
+      background: none;
+      box-shadow: none;
+    }
+    textarea#new-recipe:focus {
+      box-shadow: none;
+    }
 }
 
 body#splash {
+    background: url(xv.png) repeat #FFFFFF;
     .container {
         #splash-box {
             /* http://gradients.glrzad.com */
@@ -99,6 +105,10 @@ body#splash {
             }
         }
     }
+}
+
+.well {
+    min-height: 10px;
 }
 
 a img {
