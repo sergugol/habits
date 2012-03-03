@@ -14,8 +14,20 @@ class App.Views.Recipes extends Backbone.View
     false
 
   appendRecipe: (recipe) =>
-    t(recipe)
+    recipeView = new App.Views.Recipe({model: recipe})
+    recipeView.render()
+    $('#recipe-container', @el).append(recipeView.el)
+    @clearNewRecipe()
+
+  clearNewRecipe: =>
+    $('#new-recipe', @el).val('')
+
+  renderRecipes: =>
+    @recipes.each((recipe)->
+      @appendRecipe(recipe)
+    @)
 
   render: =>
     $(@el).html(@template())
+    @renderRecipes()
     @
