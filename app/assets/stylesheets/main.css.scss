@@ -100,8 +100,13 @@ body#splash {
                 text-shadow: 0 .5px 0 #666666;
                 font-family: 'Bitter', serif;
             }
+            #beta {
+                display: block;
+                margin: 10px 15px 0 0;
+                float: right;
+            }
             #sign-in-btn {
-                margin-top: 25px;
+                margin-top: 15px;
             }
         }
     }
