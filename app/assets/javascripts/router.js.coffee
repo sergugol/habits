@@ -6,17 +6,25 @@ class App.Router extends Backbone.Router
     @indexView.render()
 
   routes:
-    ''          :   'displayRecipes'
-    'recipes'   :   'displayRecipes'
+    ''          :   'dashboard'
+    'guidelines':   'guidelines'
+    'habits'    :   'habits'
+    'learning'  :   'learning'
     '_=_'       :   'fromFacebook'
 
   displayRoute: (route, params) ->
     t(route)
 
   fromFacebook: ->
-    @navigate('recipes', true)
+    @navigate('dashboard', true)
 
-  displayRecipes: ->
+  dashboard: ->
+
+  guidelines: ->
     recipesView = new App.Views.Recipes
     recipesView.render()
     @indexView.display(recipesView)
+
+  habits: ->
+
+  learning: ->
