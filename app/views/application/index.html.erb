@@ -3,8 +3,7 @@
     App.router = new App.Router();
     App.init({
       currentUser: <%=raw current_user.to_json %>,
-      recipes: <%=raw @recipes.to_json %>
-    });
+      });
     Backbone.history.start();
   });
 <% end %>

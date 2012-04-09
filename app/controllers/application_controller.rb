@@ -3,13 +3,6 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
 
-  def index
-    render "splash", layout: "splash" unless current_user
-    if current_user
-      @recipes = current_user.recipes
-    end
-  end
-
   private
 
   def current_user

@@ -21,10 +21,7 @@ class App.Router extends Backbone.Router
   dashboard: ->
 
   guidelines: ->
-    recipesView = new App.Views.Recipes
-    recipesView.render()
-    @indexView.display(recipesView)
-
+    
   habits: ->
 
   learning: ->

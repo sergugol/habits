@@ -53,15 +53,6 @@ body#app {
             }
         }
     }
-    textarea#new-recipe {
-      border: none;
-      width: 100%;
-      background: none;
-      box-shadow: none;
-    }
-    textarea#new-recipe:focus {
-      box-shadow: none;
-    }
 }
 
 body#splash {
